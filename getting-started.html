@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Getting Started | Easystatic site generator</title>
+    <meta name="description" content="Static site generator for GitHub Pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-orange.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  </head>
+  <body>
+    <div class="mdl-layout__container">
+      <div class="mdl-layout mdl-js-layout">
+        <div class="mdl-layout-icon"></div>
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <a class="mdl-layout-title l-title" href="/">Easystatic</a>
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/">Overview</a>
+      <a class="mdl-navigation__link" href="/getting-started">Get Started</a>
+      <a class="mdl-navigation__link" href="/recipes">Recipes</a>
+    </nav>
+  </div>
+  
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout__title">Easystatic</span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="/">Overview</a>
+    <a class="mdl-navigation__link" href="/getting-started">Get Started</a>
+    <a class="mdl-navigation__link" href="/recipes">Recipes</a>
+  </nav>
+</div>
+
+        <main class="mdl-layout__content">
+          <div class="container" style="margin: 0 auto">
+            <h2>Getting Started</h2>
+<h3>Why use Easystatic?</h3>
+<ol>
+<li>It advocates convention over configuration</li>
+<li>It's JavaScript-based, cross-platform, no need to have Ruby/Go/PHP installed</li>
+<li>It's build top of the modern mainstream front-end dev tools such as <a href="https://babeljs.io">Babel</a>,
+<a href="http://postcss.org/">Postcss</a>, <a href="https://browsersync.io/">Browsersync</a></li>
+<li>It contains a build-in development server with &quot;live reload&quot;</li>
+<li>It can scaffold the basic site layout for you</li>
+</ol>
+<h3>Requirements</h3>
+<ul>
+<li>Mac OS X, Windows, or Linux</li>
+<li><a href="https://nodejs.org/">Node.js</a> v5.0 or newer</li>
+<li><code>npm</code> v3.3 or newer (new to <a href="https://docs.npmjs.com/">npm</a>?)</li>
+<li><code>node-gyp</code> prerequisites mentioned <a href="https://github.com/nodejs/node-gyp">here</a> (optional)</li>
+</ul>
+<h3>How to Install</h3>
+<pre><code class="language-sh">$ npm install -g easystatic  
+</code></pre>
+<h3>How to Use</h3>
+<p>To build the site and launch it in a browser run:</p>
+<pre><code>$ es start &lt;path&gt;       # for example, `es start mysite.com`
+</code></pre>
+<p>..where <code>&lt;path&gt;</code> is the name of the directory with <code>.md</code> files, or the name of an empty folder.
+Easystatic will scaffold the basic site layout for you by creating an &quot;assets&quot; folder with
+<a href="http://ejs.co/">EJS</a>-based layout template file (<code>assets/main.ejs</code>) and CSS (<code>assets/main.css</code>).
+You can customize the look and feel of your site by editing layout files inside the <code>assets</code> folder.</p>
+<h3>How to Deploy</h3>
+<p>Below is an example of how you can deploy your site to <a href="https://help.github.com/categories/github-pages-basics/">GitHub Pages</a> —
+a free CDN-hosting for static websites:</p>
+<pre><code class="language-sh">$ es deploy &lt;path&gt; --repo=&lt;github-repository-url&gt; --domain=&lt;domain-name&gt;
+</code></pre>
+<p>..where <code>&lt;repo&gt;</code> is a GitHub repository, and <code>&lt;domain&gt;</code> is a custom domain name
+for your site. For example:</p>
+<pre><code class="language-sh">$ es deploy mysite.com --repo=username/mysite.com --domain=mysite.com
+</code></pre>
+<h3>Contributing</h3>
+<p>Check out <a href="https://github.com/easystatic/easystatic/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> file for information on how you can contribute to this project.</p>
+
+          </div>
+          <footer class="mdl-mini-footer">
+  <ul class="mdl-mini-footer__link-list">
+    <li class="footer__copyright">&copy; 2016 Easystatic</li>
+    <li>Maintained by <a href="https://twitter.com/koistya">@koistya</a> with help from <a href="https://github.com/easystatic/easystatic/graphs/contributors">contributors</a></li>
+  </ul>
+</footer>
+
+        </main>
+      </div>
+    </div>
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-34918747-14','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>
